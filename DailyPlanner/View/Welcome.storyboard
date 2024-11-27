@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="DailyPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="UQg-Xn-3xL">
+                                <rect key="frame" x="16" y="125" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWu-Sx-73G">
+                                <rect key="frame" x="16" y="154" width="42" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVM-MZ-JU1" customClass="PrimaryActionButton" customModule="DailyPlanner" customModuleProvider="target">
+                                <rect key="frame" x="10" y="783" width="373" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eVz-8W-pMU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="getStartedButtonTapped:" destination="Y6W-OH-hqX" eventType="primaryActionTriggered" id="cYs-G7-HZm"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close" translatesAutoresizingMaskIntoConstraints="NO" id="DBf-Ze-Doa">
+                                <rect key="frame" x="10" y="59" width="17" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfB-gY-xb6">
+                                <rect key="frame" x="176" y="754" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="planning" translatesAutoresizingMaskIntoConstraints="NO" id="Et8-6H-zYN">
+                                <rect key="frame" x="46" y="330" width="301" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rfB-gY-xb6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="6A2-x3-1aN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rfB-gY-xb6" secondAttribute="trailing" constant="16" id="9ts-uX-EGO"/>
+                            <constraint firstItem="fVM-MZ-JU1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="9yt-0N-AhX"/>
+                            <constraint firstItem="fVM-MZ-JU1" firstAttribute="top" secondItem="rfB-gY-xb6" secondAttribute="bottom" constant="8" symbolic="YES" id="ChY-eW-oM1"/>
+                            <constraint firstAttribute="bottom" secondItem="fVM-MZ-JU1" secondAttribute="bottom" constant="39" id="Fat-h1-rAE"/>
+                            <constraint firstItem="SWu-Sx-73G" firstAttribute="top" secondItem="UQg-Xn-3xL" secondAttribute="bottom" constant="10" id="Rtq-sM-vzp"/>
+                            <constraint firstItem="UQg-Xn-3xL" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="125" id="WxT-5U-9HZ"/>
+                            <constraint firstItem="rfB-gY-xb6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="176" id="YSZ-oX-pFa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fVM-MZ-JU1" secondAttribute="trailing" constant="10" id="agH-TC-m4U"/>
+                            <constraint firstItem="UQg-Xn-3xL" firstAttribute="leading" secondItem="SWu-Sx-73G" secondAttribute="leading" id="ePq-uw-2iq"/>
+                            <constraint firstItem="rfB-gY-xb6" firstAttribute="centerX" secondItem="fVM-MZ-JU1" secondAttribute="centerX" id="fSs-pW-50J"/>
+                            <constraint firstItem="SWu-Sx-73G" firstAttribute="top" secondItem="UQg-Xn-3xL" secondAttribute="bottom" constant="43" id="qqI-ng-Kzf"/>
+                            <constraint firstItem="UQg-Xn-3xL" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="sXD-kX-pHF"/>
+                            <constraint firstItem="fVM-MZ-JU1" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="15" id="xd5-Qo-DDA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButtonImage" destination="DBf-Ze-Doa" id="LCs-5D-GVL"/>
+                        <outlet property="getStartedText" destination="rfB-gY-xb6" id="PY6-Da-dS2"/>
+                        <outlet property="headerText" destination="UQg-Xn-3xL" id="R42-Jc-7rX"/>
+                        <outlet property="sloganText" destination="SWu-Sx-73G" id="Hiq-qN-vec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="800" height="800"/>
+        <image name="planning" width="490" height="490"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
